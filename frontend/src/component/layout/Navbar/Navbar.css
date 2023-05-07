@@ -1,0 +1,92 @@
+.nav {
+	background-color: #000;
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	background: rgb(184, 49, 49);
+	height: 44px;
+	z-index: 300;
+	position: static;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+.desktop-nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	list-style: none;
+	padding: 10px;
+}
+
+.link-logo {
+	cursor: pointer;
+}
+
+.user-location-delivery {
+	font-weight: 600;
+}
+
+.user-location {
+	display: flex;
+	align-items: center;
+}
+
+.user-location-current {
+	margin: 0 5px 0 0;
+}
+
+.mat-icon {
+	color: #ffa201;
+	margin-right: 3px;
+}
+
+.mat-icon-login {
+	margin-right: 3px;
+}
+
+.nav-li {
+	flex: 0.33;
+}
+
+.login {
+	text-decoration: none;
+}
+
+.login-button {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 35px;
+	cursor: pointer;
+	font-family: "Source Sans Pro", sans-serif;
+	color: #ffa201;
+	font-size: 16px;
+	font-weight: 600;
+	border: 1px solid #ffa20181;
+	border-radius: 4px;
+	background: none;
+	transition: all 0.4s ease;
+}
+.login-button:hover {
+	background: #ffa201;
+	color: white;
+}
+.none {
+	visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+	.nav-location {
+		display: none;
+	}
+}
